@@ -30,13 +30,27 @@ Deliverables:
 
 - You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
-### Read, Preprocess and Evaluate Data
+### Read, Preprocess and Evaluate data
 
-What variable(s) are considered the target(s) for your model?
-What variable(s) are considered to be the features for your model?
-What variable(s) are neither targets nor features, and should be removed from the input data?
+- The coefficients are broken down as follows:
+  - The target feature is the variable name 'Is_Successful'
+  - The feature variables are:
+    - Application Type
+    - Affiliation
+    - Classification
+    - Use_Case
+    - Organization
+    - Status
+    - Income_Amt
+    - Special_Considerations
+    - Ask_Amount
 
-There is a bulleted list that answers all the above 3 questions
+- The coefficients that are neither targets nor features and should likely be removed are:
+  - Affiliation
+  - Use_Case
+  - Organization
+  - Status
+  - Special_Considerations
 
 ![Image1](images/1DataDensityPlot1.png)
 
@@ -47,7 +61,6 @@ Were you able to achieve the target model performance?
 What steps did you take to try and increase model performance?
 
 There is a bulleted list that answers all the above 3 questions
-
 
 ------------------------------------------------------------------------------------------------------------
 
