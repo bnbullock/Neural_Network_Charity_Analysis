@@ -4,9 +4,7 @@
 
 Alphabet Soup is a philantropic foundation that support environmental initiatives, improves the well being of people's lives and helps world wide initiatives for peace and unity. They have been very effective at raising and investing in livesaving technologies and reforestation initiatives around the world to the tune of 10 billion dollars in the past 20 years. However, not every donation is impactful, some groups will take the funds and be never heard from again. To ensure that donated funds are used effectively, Alpahbet Soup's management has decided to invest in technologies that will help them to predict which organizations should receive donations versus those that are high risk.
 
-The desire is to create a mathematical data driven solution as a tool to assist in making sound decisions. As such, we are tasked with creating a deep learning neural network model which can take in all types of input data and provide a clear decision making result. We will test and optimize the results as needed to provide the best solution possible.
-
-Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset.
+The desire is to create a mathematical data driven solution as a tool to assist in making sound decisions. As such, Alphabet Soup management has tasked us with creating a deep learning neural network model which can take in all types of input data and provide a clear decision making result. This deep learning model will be based on a binary classification model and will be trained, tested and optimized as needed to provide the best predicted outcome based on the features in the dataset.
 
 Deliverables:
 
@@ -32,9 +30,9 @@ Deliverables:
 
 ### Read, Preprocess and Evaluate data
 
-- The coefficients are broken down as follows:
-  - The target feature is the variable name 'Is_Successful'
-  - The feature variables are:
+- The different features of the dataset are broken down as follows:
+  - The target coefficient is the variable name 'Is_Successful'
+  - The coefficient variables are:
     - Application Type
     - Affiliation
     - Classification
@@ -55,6 +53,16 @@ Deliverables:
 ![Image1](images/1DataDensityPlot1.png)
 
 ### Compile, train and Evaluate Model
+
+-The neural network model was constructed using 9 columns of coefficients with one output target coefficient. The construction was as follows:
+- Layer 1 with 80 nodes was calculated using the formula below and then rounded up
+
+![Image2](images/node_formula.png)
+
+- Layer 2 with 30 nodes
+- The target performance accuracy of 75% or greater was not attained by this model
+
+![Image2](images/base_2metrics.png)
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 Were you able to achieve the target model performance?
