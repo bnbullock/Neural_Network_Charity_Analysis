@@ -6,6 +6,8 @@ Alphabet Soup is a philantropic foundation that support environmental initiative
 
 The desire is to create a mathematical data driven solution as a tool to assist in making sound decisions. As such, we are tasked with creating a deep learning neural network model which can take in all types of input data and provide a clear decision making result. We will test and optimize the results as needed to provide the best solution possible.
 
+Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset.
+
 Deliverables:
 
 1. Preprocessing Data for a Neural Network Model
@@ -26,42 +28,30 @@ Deliverables:
 
 ## Results
 
-- The results ...
+- You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
-### Result One
+### Read, Preprocess and Evaluate Data
 
-Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
-
-![Image1](images/1NaiveRandomOver1.png)
-
-### Optimization
-
-Data Preprocessing
 What variable(s) are considered the target(s) for your model?
 What variable(s) are considered to be the features for your model?
 What variable(s) are neither targets nor features, and should be removed from the input data?
 
-![Image2](images/2SmoteOver1.png)
+There is a bulleted list that answers all the above 3 questions
 
-### Result Three
+![Image1](images/1DataDensityPlot1.png)
 
-![Image3](images/3ClusterCentroidsUnder1.png)
+### Compile, train and Evaluate Model
 
-### Result Four
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take to try and increase model performance?
 
-![Image4](images/4SmoteennOverUnder1.png)
+There is a bulleted list that answers all the above 3 questions
 
-### Result Five
-
-![Image5](images/5BalForest1.png)
-
-### Result Six
-
-![Image6](images/6Ensemble1.png)
 
 ------------------------------------------------------------------------------------------------------------
 
 ## Overall Summary
 
-- Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation. 
+- Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 - There is a recommendation on using a different model to solve the classification problem, and justification
