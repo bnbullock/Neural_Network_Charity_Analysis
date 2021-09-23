@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Alphabet Soup is a philantropic foundation that support environmental initiatives, improves the well being of people's lives and helps world wide initiatives for peace and unity. They have been very effective at raising and investing in livesaving technologies and reforestation initiatives around the world to the tune of 10 billion dollars in the past 20 years. However, not every donation is impactful, some groups will take the funds and be never heard from again. To ensure that donated funds are used effectively, Alpahbet Soup's management has decided to invest in technologies that will help them to predict which organizations should receive donations versus those that are high risk.
+Alphabet Soup is a philantropic foundation that supports environmental initiatives, improves the well being of people's lives and helps world wide initiatives for peace and unity. They have been very effective at raising and investing in livesaving technologies and reforestation initiatives around the world to the tune of 10 billion dollars in the past 20 years. However, not every donation is impactful, some groups will take the funds and be never heard from again. To ensure that donated funds are used effectively, Alpahbet Soup's management has decided to invest in technologies that will help them to predict which organizations should receive donations versus those that are high risk.
 
 The desire is to create a mathematical data driven solution as a tool to assist in making sound decisions. As such, Alphabet Soup management has tasked us with creating a deep learning neural network model which can take in all types of input data and provide a clear decision making result. This deep learning model will be based on a binary classification model and will be trained, tested and optimized as needed to provide the best predicted outcome based on the features in the dataset.
 
@@ -50,29 +50,27 @@ Deliverables:
   - Status
   - Special_Considerations
 
-![Image1](images/1DataDensityPlot1.png)
-
 ### Compile, train and Evaluate Model
 
--The neural network model was constructed using 9 columns of coefficients with one output target coefficient. The construction was as follows:
-- Layer 1 with 80 nodes was calculated using the formula below and then rounded up
+-The neural network model was constructed based on 43 columns of coefficients with one output target coefficient. The construction was as follows:
 
-![Image2](images/node_formula.png)
-
+- Layer 1 with 80 nodes
 - Layer 2 with 30 nodes
-- The target performance accuracy of 75% or greater was not attained by this model
+- Activation functions used was 'relu' for the hidden layers to identify nonlinear characteristics from the input values and 'sigmoid' for the target which provides a binary result
+- The target performance accuracy of 75% or greater was not attained by this model and is shown below.
 
 ![Image2](images/base_2metrics.png)
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
-
-There is a bulleted list that answers all the above 3 questions
+- To increase model performance a number of things were attempted and annotated in the code as follows:
+  - Input values were dropped
+  - Nodes were reduced
+  - Different activation functions were used(tanh and Softmax)
+  - The second hidden layer was entirely removed
+  - Compilation loss function was changed to 'mse'
+  - Fit model epochs was reduced from 100 to 50
 
 ------------------------------------------------------------------------------------------------------------
 
 ## Overall Summary
 
-- Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
-- There is a recommendation on using a different model to solve the classification problem, and justification
+In this particular case the deep learning model was not a good solution for our dataset as the results were below the 75% accuracy rate that was needed. It's likely that the model is acting upon the scale exerted by different features of the dataset. Also, overfitting might also be a concern where deep learning models can cause convergence. A recommendation would be to use a Support Vector Machine(SVM) as a possible solution to this request. SVM's can build models with linear and non-linear data and are less prone to overfitting.
